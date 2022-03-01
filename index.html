@@ -1,0 +1,154 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/all.min.css" integrity="sha512-eBNnVs5xPOVglLWDGXyZnZZ2K2ixXhR/3aECgCpFnW2dGCd/yiqXZ6fcB3BubeA91kM6NX234b6Wrah8RiYAPA==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
+  <title>KFD-Airline</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <h1>KFD Airline</h1>
+      <span id="menu">menu</span>
+      <!-- Desktop Menu -->
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#about">PRODUCTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#login">LOGIN</a></li>
+      </ul>
+    </nav>
+    <!-- Mobile Menu -->
+    <ul id="menu-nav">
+      <li><a href="#">HOME</a></li>
+      <li><a href="#about">PRODUCTS</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+      <li><a href="#login">LOGIN</a></li>
+    </ul>
+    <div class="banner text-center">
+      <h1>Take a Break From <br> Your Normal View</h1>
+      <h4>Fly with us</h4>
+      
+    </div>
+  </header>
+  <hr>
+  <main>
+    <!-- Services -->
+    <section id="about">
+      <h1 class='text-center font-36'>
+        Products and Services
+      </h1>
+      <h4 class="text-center my-10">What we offer</h4>
+      <div class="services">
+        <div class="card">
+          <img src="./images/1.JPG" alt="">
+          <h4> Aircraft</h4>
+          <span>-Guidance and Parking <br> -Ground services and handling <br>-Aircraft cleaning <br> -Fuel <br> -Technical services</span>
+        </div>
+        <div class="card">
+          <img src="./images/pilot2.JPG" alt="">
+          <h4>Passenger and Crew</h4>
+          <span>-Flight services <br> -Pilot supplies <br>-Aircraft rental <br> -Fuel <br> -Aircraft management</span>
+        </div>
+        <div class="card">
+          <img src="./images/3.JPG" alt="">
+          <h4> Facilities</h4>
+          <span>-General aviation terminal buildings <br> -Aircraft hangers <br>-Aircraft parking <br> -Office <br> -Shop</span>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <!-- About -->
+    <section id="services" >
+      <h1 class="text-center font-36">Privacy  Policy Page</h1>
+      <div class="about">
+        <div class="about-image">
+          <img src="./images/pilot1.JPG" alt="">
+        </div>
+        <div class="about-text">
+          <p class="text-justify"> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eum eveniet iure fugit excepturi ipsum neque distinctio, quibusdam voluptatum qui necessitatibus quis molestias esse labore eos iste hic modi <span class="mobile-hidden"> praesentium.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam dignissimos distinctio unde assumenda quaerat quibusdam quia qui magni, illo voluptatum rem voluptatibus labore? Quidem porro id sint quis quas neque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolores, neque id, sunt unde tenetur deleniti ea corporis accusamus fugit assumenda commodi repellat quo laboriosam omnis necessitatibus sequi! Architecto, cumque!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam distinctio unde praesentium eum omnis repellat necessitatibus facilis ducimus perferendis. Nam, modi laborum iure nisi saepe odit vitae voluptatibus laudantium temporibus?
+            </span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <!-- Contact -->
+    <section class="bottom">
+      <form class="contact" id="contact">
+        <h1 class="text-center">Get In Touch</h1>
+        <p class="text-justify">
+         
+          If you'll like to get in touch with us please fill in the form
+          below and we will get back to you as soon as possible.
+        </p>
+        <label for="name">Name: </label>
+        <input type="text" id="name" placeholder="Full Name">
+        <label for="email">Email Address: </label>
+        <input type="email" id="email" placeholder="johnDoe@gmail.com">
+        <label for="phone">Phone: </label>
+        <input type="tel" id="phone" placeholder="+2347012345678">
+        <label for="subject">Subject: </label>
+        <input type="text" id="subject" placeholder="Subject of the message">
+       <label for="message">Message:</label>
+       <textarea name="" id="message" cols="30" rows="10"></textarea>
+       <br>
+       <button type="submit">Submit</button>
+      </form>
+      <div class="login" id="contact">
+        <form class="">
+          <input type="search" name="" id="" placeholder="Search">
+          <button type="submit">Search</button>
+        </form>
+        <form class="login-form" id="login">
+          <h1 class="text-center my-10">Login Form</h1>
+          <br>
+          <label for="name">Email: </label>
+          <input type="email" id="name" placeholder="Username or Email">
+          <br>
+          <label for="email">Password: </label>
+          <input type="password" id="email" placeholder="Password">
+          <br>
+          <button type="submit">Login</button>
+          <br>
+          <p class="text-center">Haven't registered yet? <a href="">Sign Up</a> </p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <h1>KFD-Airline 2022</h1>
+    <ul class="text-center">
+      <li><i class="fab fa-facebook fa-2x"></i></li>
+      <li><i class="fab fa-twitter fa-2x"></i></li>
+      <li><i class="fab fa-instagram fa-2x"></i></li>
+      <li><i class="fab fa-github fa-2x"></i></li>
+    </ul>
+  </footer>
+  <script>
+    let toggle =  document.getElementById('menu-nav');
+    let menu =  document.getElementById('menu');
+    let open = false;
+
+    menu.addEventListener('click', function () {
+      if (!open) {
+        toggle.style.height= 'auto';
+        toggle.style.visibility= 'visible';
+        open = !open;
+      }else{
+        toggle.style.visibility = 'hidden';
+        toggle.style.height= '0px';
+        open = !open;
+      }
+    })
+  </script>
+</body>
+</html>

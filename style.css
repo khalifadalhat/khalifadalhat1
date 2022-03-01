@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Urbanist&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Urbanist',
+    sans-serif;
+}
+body{
+  max-width: 100vw;
+  background-image: linear-gradient(to right, #2c3e50,#bdc3c7,#ddd6f3);
+}
+
+
+/* body{
+  background-color: #e0e0e0;
+} */
+.text-center {
+  text-align: center;
+}
+
+.text-justify{
+  text-align: justify ;
+}
+
+.font-36{
+  font-size: 36px;
+}
+
+/* ---- Header Start ----- */
+header {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('./images/4.JPG');
+  
+  color: #fff;
+}
+
+header h1 {
+  font-family: 'Urbanist', sans-serif;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  color: white;
+  align-self: center;
+  width: 80vw;
+  border: 3px dotted;
+  margin-bottom: 70px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 55px;
+}
+
+nav ul {
+  width: 30%;
+}
+
+#menu, #menu-nav{
+  visibility: hidden;
+}
+ #menu-nav{
+  height: 0px;
+}
+nav ul,
+nav ul li {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  transition: all ease-out 0.3s;
+}
+
+/* ---- Header end ------- */
+
+/* ----Main start ------ */
+
+.services {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 70px;
+}
+
+
+#services h1 {
+  padding-top: 40px;
+  margin-top: 50px;
+}
+
+.card {
+  flex:1;
+  flex-basis: 200px;
+  margin: 30px;
+  padding: 30px;
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  background: #fff;
+  opacity: 0.8;
+  
+ 
+}
+.card:hover{
+  background-color: rgba(75, 78, 79, 0.981);
+}
+.card > img{
+  width: 200px;
+  height: 200px;
+}
+
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 70px;
+  margin-bottom: 50px;
+}
+
+.about-image {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.about-image img {
+  width: 250px;
+  height: 250px;
+  margin-top: -10px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+#about h1{
+  margin: 40px 0px;
+}
+.about-text {
+  padding: 0px 50px;
+  flex: 2;
+}
+button[type='submit']{
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+}
+button:hover{
+  background-color: #d9d9d9;
+}
+
+
+input[type='search']{
+  padding: 10px;
+  width: 80%;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  outline: none;
+}
+
+input:invalid{
+  border: 1px solid lightcoral;
+}
+
+input{
+  padding: 15px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  outline: none;
+}
+input[type='password']{
+  padding: 15px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  outline: none;
+}
+hr{
+  border:0.1px solid lightgray;
+  height: 0.1px;
+}
+
+.bottom{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 70px;
+} 
+
+.contact{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  border-right:1px solid lightgray;
+  padding: 0px 70px;
+}
+
+.contact textarea{
+  border-color: lightgray;
+ border: 1px solid lightgray;
+ border-radius: 10px;
+}
+.contact p{
+  text-align: justify;
+  margin: 10px;
+}
+
+.login{
+  flex: 1;
+  padding-left: 30px;
+}
+
+label::after{
+  content: '*';
+  color: red
+}
+
+.login-form{
+  display: inline-flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+.my-10{
+  margin: 10px;
+}
+/* ----Main end ----- */
+
+/* ----Footer start----- */
+
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+footer ul, footer ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+/* ----Footer end----- */
+
+/* ------Medai Queries Start--------- */
+
+@media screen and (max-width:678px){
+  #menu{
+    display: inline-flex;
+    visibility: visible;
+    height: auto;
+  }
+  .services{
+    flex-direction: column;
+    padding: 20px;
+    row-gap: 10px;
+  }
+  .banner{
+    height: 20vh;
+  }
+  .card{
+    margin: 10px;
+  }
+  .about{
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .mobile-hidden{
+    display: none;
+  }
+  .about-image img{
+    width: 150px;
+    height: 150px;
+  }
+  .about-text{
+    padding: 0px;
+  }
+  .bottom{
+    flex-direction: column-reverse;
+    padding: 10px;
+  }
+  .contact{
+    padding: 5px 10px;
+    border-right:none;
+  }
+  input[type='search']{
+    width: 70%;
+  }
+  nav{
+    row-gap: 20px;
+  }
+  header{
+    height: 50vh;
+  }
+  #menu-nav{
+    display: inline-flex;
+    height: 0px;
+    list-style: none;
+    margin-left: auto;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  
+  header nav ul,
+  header nav ul li{
+    display: none;
+  }
+  .login{
+    padding-left: 30px;
+  }
+}
+
+/* ------Medai Queries end--------- */
+/* .contact input[type='text']{
+  border: none;
+  border-bottom: 1px solid lightgray;
+  border-radius: 0px;
+  width: 80%;
+  outline: none;
+} */
